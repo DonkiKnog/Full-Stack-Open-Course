@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant navegador
     participant servidor
@@ -28,3 +29,4 @@ sequenceDiagram
     deactivate servidor
 
     Note right of navegador: El navegador recarga la página con la lista actualizada.
+```
