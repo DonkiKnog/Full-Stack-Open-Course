@@ -57,9 +57,9 @@ const PersonForm = ({persons, setPersons, setMensaje, setErrorcito}) => {
           .create(listado)
           .then(returnedPerson => {
             setPersons(persons.concat(returnedPerson))
+            setMensaje(`${newName} añadido a la lista`)
             setNewName('')
             setNewNumero('')
-            setMensaje(`${returnedPerson.name} añadido a la lista`)
           })       
         }
      }
