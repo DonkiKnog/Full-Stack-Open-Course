@@ -19,7 +19,7 @@ const App = () => {
         console.log(response);
         setPersons(response)
       })
-  }, [])
+  }, [mensaje])
   
   const [filtrado, setFiltrado] = useState('')
   

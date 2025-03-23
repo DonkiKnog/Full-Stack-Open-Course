@@ -53,7 +53,6 @@ const PersonForm = ({persons, setPersons, setMensaje, setErrorcito}) => {
             })
         }
       } else {
-      console.log(listado);
         personsService
           .create(listado)
           .then(returnedPerson => {
@@ -61,7 +60,7 @@ const PersonForm = ({persons, setPersons, setMensaje, setErrorcito}) => {
             setNewName('')
             setNewNumero('')
             setMensaje(`${returnedPerson.name} añadido a la lista`)
-          })
+          })       
         }
      }
       
