@@ -10,7 +10,7 @@ const App = () => {
 
   const [persons, setPersons] = useState([])
   const [mensaje, setMensaje] = useState('')
-  const [errorcito, setErrorcito] = useState('')
+  const [errorcito, setErrorcito] = useState(null)
 
   useEffect(() => {
     personsService
@@ -24,7 +24,7 @@ const App = () => {
   const [filtrado, setFiltrado] = useState('')
   
   const Notification = ({mensaje, errorcito}) => {
-    console.log(errorcito);    
+    
     if (errorcito !== null){
       return(
         <div className='error'>
